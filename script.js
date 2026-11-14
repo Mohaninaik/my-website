@@ -26,17 +26,17 @@
     all.forEach((p) => { p.mail = insta; });
     const count = (cat) => all.filter((p) => p.cat === cat).length;
     const tiles = [
-      { label: 'BIRDS', cat: 'Birds', src: 'images/common-kingfisher.jpg', pos: '50% 60%', alt: 'A common kingfisher perched on a bare twig' },
-      { label: 'WILDLIFE', cat: 'Wildlife', src: 'images/tiger-closeup.jpg', pos: '60% 40%', alt: 'Close-up of a tiger’s face' },
-      { label: 'REPTILES AND AMPHIBIANS', cat: 'Reptiles and amphibians', src: 'images/green-vine-snake.jpg', pos: '40% 50%', alt: 'A green vine snake with its tongue out' },
-      { label: 'MACRO', cat: 'Macro', src: 'images/striped-caterpillar.jpg', pos: '45% 50%', alt: 'A striped caterpillar on a twig' }
+      { label: 'BIRDS', cat: 'Birds', src: 'common-kingfisher.jpg', pos: '50% 60%', alt: 'A common kingfisher perched on a bare twig' },
+      { label: 'WILDLIFE', cat: 'Wildlife', src: 'tiger-closeup.jpg', pos: '60% 40%', alt: 'Close-up of a tiger’s face' },
+      { label: 'REPTILES AND AMPHIBIANS', cat: 'Reptiles and amphibians', src: green-vine-snake.jpg', pos: '40% 50%', alt: 'A green vine snake with its tongue out' },
+      { label: 'MACRO', cat: 'Macro', src: 'striped-caterpillar.jpg', pos: '45% 50%', alt: 'A striped caterpillar on a twig' }
     ].map((t) => ({ ...t, count: count(t.cat) }));
     const strip = [
-      { title: 'Spotted owlets', src: 'images/spotted-owlets.jpg' },
-      { title: 'Indian peafowl', src: 'images/peacock.jpg' },
-      { title: 'Tiger', src: 'images/tiger-closeup.jpg' },
-      { title: 'Pied kingfisher', src: 'images/pied-kingfisher.jpg' },
-      { title: 'Tricolored munia', src: 'images/tricolored-munia.jpg' }
+      { title: 'Spotted owlets', src: 'spotted-owlets.jpg' },
+      { title: 'Indian peafowl', src: 'peacock.jpg' },
+      { title: 'Tiger', src: 'tiger-closeup.jpg' },
+      { title: 'Pied kingfisher', src: 'pied-kingfisher.jpg' },
+      { title: 'Tricolored munia', src: 'tricolored-munia.jpg' }
     ];
     const items = current === 'All' ? all : all.filter((p) => p.cat === current);
     const labels = ['All', 'Birds', 'Wildlife', 'Reptiles and amphibians', 'Macro'];
