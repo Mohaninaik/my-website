@@ -6,22 +6,22 @@
     var current = state.filter;
     const insta = 'https://www.instagram.com/mohan_irayya';
     const all = [
-      { src: 'images/tiger-closeup.jpg', ratio: '4 / 5', zoom: 1, title: 'Tiger', cat: 'Wildlife', alt: 'Close-up portrait of a tiger’s face in profile with one amber eye and long white whiskers against a dark background' },
-      { src: 'images/tiger-water.jpg', ratio: '3 / 2', zoom: 1, title: 'Tiger in the water', cat: 'Wildlife', alt: 'A tiger sitting in shallow water, head turned with its mouth open and amber eyes looking ahead' },
-      { src: 'images/peafowl-group.jpg', ratio: '3 / 2', zoom: 1, title: 'Indian peafowl', cat: 'Birds', alt: 'Three Indian peafowl standing in a row among green shrubs, necks raised and turned to the right' },
-      { src: 'images/spotted-owlets.jpg', ratio: '4 / 5', zoom: 1, title: 'Spotted owlets', cat: 'Birds', alt: 'Two spotted owlets in dark forest light, one perched on a lichen-covered branch and one in flight' },
-      { src: 'images/indian-roller.jpg', ratio: '3 / 2', zoom: 1, title: 'Indian roller landing', cat: 'Birds', alt: 'An Indian roller landing on a tree stump with wings fully spread against a soft green background' },
-      { src: 'images/green-vine-snake.jpg', ratio: '3 / 2', zoom: 1, title: 'Green vine snake', cat: 'Reptiles and amphibians', alt: 'Bright green vine snake with its tongue out against a black background' },
-      { src: 'images/pied-kingfisher.jpg', ratio: '4 / 5', zoom: 1, title: 'Pied kingfisher', cat: 'Birds', alt: 'Pied kingfisher in flight, wings angled down, against a blurred green background' },
-      { src: 'images/striped-caterpillar.jpg', ratio: '3 / 2', zoom: 1, title: 'Striped caterpillar', cat: 'Macro', alt: 'Red, yellow and black banded caterpillar with long black bristles on a twig' },
-      { src: 'images/kingfisher-diving.jpg', ratio: '4 / 5', zoom: 1.1, title: 'Kingfisher diving', cat: 'Birds', alt: 'A kingfisher with blue back plunging head-first off a thin branch' },
-      { src: 'images/toad.jpg', ratio: '3 / 2', zoom: 1, title: 'Toad on a fallen leaf', cat: 'Reptiles and amphibians', alt: 'A small toad with a large dark eye sitting on a dry brown leaf' },
-      { src: 'images/peacock.jpg', ratio: '3 / 2', zoom: 1, title: 'Indian peafowl', cat: 'Birds', alt: 'A peacock standing among blurred green foliage at soft dawn light' },
-      { src: 'images/tricolored-munia.jpg', ratio: '4 / 5', zoom: 1, title: 'Tricolored munia', cat: 'Birds', alt: 'A chestnut, white and black munia clinging to a thin stem among tall grass' },
-      { src: 'images/hairy-caterpillar.jpg', ratio: '3 / 2', zoom: 1, title: 'Hairy caterpillar', cat: 'Macro', alt: 'A pale, long-haired caterpillar crawling over the end of a branch' },
-      { src: 'images/common-kingfisher.jpg', ratio: '5 / 4', zoom: 1, title: 'Common kingfisher', cat: 'Birds', alt: 'A common kingfisher perched on a bare twig against a dark green background' },
-      { src: 'images/lizard-night.jpg', ratio: '3 / 2', zoom: 1, title: 'Lizard at night', cat: 'Reptiles and amphibians', alt: 'A spiny lizard resting along a branch against a black night background' },
-      { src: 'images/snake-portrait.jpg', ratio: '3 / 2', zoom: 1, title: 'Snake portrait', cat: 'Reptiles and amphibians', alt: 'Close-up of a dark snake head with its forked tongue extended' }
+      { src: 'tiger-closeup.jpg', ratio: '4 / 5', zoom: 1, title: 'Tiger', cat: 'Wildlife', alt: 'Close-up portrait of a tiger’s face in profile with one amber eye and long white whiskers against a dark background' },
+      { src: 'tiger-water.jpg', ratio: '3 / 2', zoom: 1, title: 'Tiger in the water', cat: 'Wildlife', alt: 'A tiger sitting in shallow water, head turned with its mouth open and amber eyes looking ahead' },
+      { src: 'peafowl-group.jpg', ratio: '3 / 2', zoom: 1, title: 'Indian peafowl', cat: 'Birds', alt: 'Three Indian peafowl standing in a row among green shrubs, necks raised and turned to the right' },
+      { src: 'spotted-owlets.jpg', ratio: '4 / 5', zoom: 1, title: 'Spotted owlets', cat: 'Birds', alt: 'Two spotted owlets in dark forest light, one perched on a lichen-covered branch and one in flight' },
+      { src: 'indian-roller.jpg', ratio: '3 / 2', zoom: 1, title: 'Indian roller landing', cat: 'Birds', alt: 'An Indian roller landing on a tree stump with wings fully spread against a soft green background' },
+      { src: 'green-vine-snake.jpg', ratio: '3 / 2', zoom: 1, title: 'Green vine snake', cat: 'Reptiles and amphibians', alt: 'Bright green vine snake with its tongue out against a black background' },
+      { src: 'pied-kingfisher.jpg', ratio: '4 / 5', zoom: 1, title: 'Pied kingfisher', cat: 'Birds', alt: 'Pied kingfisher in flight, wings angled down, against a blurred green background' },
+      { src: 'striped-caterpillar.jpg', ratio: '3 / 2', zoom: 1, title: 'Striped caterpillar', cat: 'Macro', alt: 'Red, yellow and black banded caterpillar with long black bristles on a twig' },
+      { src: 'kingfisher-diving.jpg', ratio: '4 / 5', zoom: 1.1, title: 'Kingfisher diving', cat: 'Birds', alt: 'A kingfisher with blue back plunging head-first off a thin branch' },
+      { src: 'toad.jpg', ratio: '3 / 2', zoom: 1, title: 'Toad on a fallen leaf', cat: 'Reptiles and amphibians', alt: 'A small toad with a large dark eye sitting on a dry brown leaf' },
+      { src: 'peacock.jpg', ratio: '3 / 2', zoom: 1, title: 'Indian peafowl', cat: 'Birds', alt: 'A peacock standing among blurred green foliage at soft dawn light' },
+      { src: 'tricolored-munia.jpg', ratio: '4 / 5', zoom: 1, title: 'Tricolored munia', cat: 'Birds', alt: 'A chestnut, white and black munia clinging to a thin stem among tall grass' },
+      { src: 'hairy-caterpillar.jpg', ratio: '3 / 2', zoom: 1, title: 'Hairy caterpillar', cat: 'Macro', alt: 'A pale, long-haired caterpillar crawling over the end of a branch' },
+      { src: 'common-kingfisher.jpg', ratio: '5 / 4', zoom: 1, title: 'Common kingfisher', cat: 'Birds', alt: 'A common kingfisher perched on a bare twig against a dark green background' },
+      { src: 'lizard-night.jpg', ratio: '3 / 2', zoom: 1, title: 'Lizard at night', cat: 'Reptiles and amphibians', alt: 'A spiny lizard resting along a branch against a black night background' },
+      { src: 'snake-portrait.jpg', ratio: '3 / 2', zoom: 1, title: 'Snake portrait', cat: 'Reptiles and amphibians', alt: 'Close-up of a dark snake head with its forked tongue extended' }
     ];
     all.forEach((p) => { p.mail = insta; });
     const count = (cat) => all.filter((p) => p.cat === cat).length;
