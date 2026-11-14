@@ -30,7 +30,7 @@
       { label: 'WILDLIFE', cat: 'Wildlife', src: 'tiger-closeup.jpg', pos: '60% 40%', alt: 'Close-up of a tiger’s face' },
       { label: 'REPTILES AND AMPHIBIANS', cat: 'Reptiles and amphibians', src: green-vine-snake.jpg', pos: '40% 50%', alt: 'A green vine snake with its tongue out' },
       { label: 'MACRO', cat: 'Macro', src: 'striped-caterpillar.jpg', pos: '45% 50%', alt: 'A striped caterpillar on a twig' }
-    ].map((t) => ({ ...t, count: count(t.cat) }));
+    ].map((tile) => ({ ...tile, count: count(tile.cat) }));
     const strip = [
       { title: 'Spotted owlets', src: 'spotted-owlets.jpg' },
       { title: 'Indian peafowl', src: 'peacock.jpg' },
